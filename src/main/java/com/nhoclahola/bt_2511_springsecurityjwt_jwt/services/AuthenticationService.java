@@ -30,7 +30,7 @@ public class AuthenticationService
                 .email(input.getEmail())
                 .password(passwordEncoder.encode(input.getPassword()))
                 .build();
-        return userRepository.saveAll(user);
+        return userRepository.save(user);
     }
 
     public User authenticate(LoginUserModel input)
