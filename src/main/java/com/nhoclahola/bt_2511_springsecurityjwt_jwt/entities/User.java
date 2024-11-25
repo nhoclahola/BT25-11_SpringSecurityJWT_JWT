@@ -29,7 +29,6 @@ public class User implements UserDetails
     private String fullName;
     @Column(nullable = false, length = 50, unique = true)
     private String email;
-    @Column(nullable = false, length = 500)
     private String images;
     @Column(nullable = false)
     private String password;
